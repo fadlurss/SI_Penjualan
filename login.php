@@ -1,7 +1,5 @@
 <?php
-    session_start();
     include "admin/config.php";
-
     if(isset($_POST["submit"])){
         $username = htmlentities(strip_tags(trim($_POST["username"])));
         $password = htmlentities(strip_tags(trim($_POST["password"])));
@@ -23,9 +21,8 @@
         }
 
         if($pesan_error === ""){
-            session_start();
             $_SESSION["username"] = "$username";
-            header("Location : index.php");
+            echo '<meta http-equiv="refresh" content="0;URL=index.php" />';
         }
         
     } else {

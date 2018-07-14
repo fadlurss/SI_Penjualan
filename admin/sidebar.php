@@ -40,39 +40,33 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./user.html">
+                        <a class="nav-link" href="data_barang/barang_view.php">
                             <i class="nc-icon nc-notes"></i>
                             <p>Data Barang</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./table.html">
+                        <a class="nav-link" href="data_transaksi/transaksi_view.php">
                             <i class="nc-icon nc-notes"></i>
-                            <p>Data Penjualan</p>
+                            <p>Data Transaksi</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./typography.html">
+                        <a class="nav-link" href="data_jenis_barang/jenis_barang_view.php">
                             <i class="nc-icon nc-paper-2"></i>
-                            <p>Typography</p>
+                            <p>Data Jenis Barang</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./icons.html">
+                        <a class="nav-link" href="data_supplier/supplier_view.php">
                             <i class="nc-icon nc-atom"></i>
-                            <p>Icons</p>
+                            <p>Data Supplier</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./maps.html">
+                        <a class="nav-link" href="data_pengeluaran/pengeluaran_view.php">
                             <i class="nc-icon nc-pin-3"></i>
-                            <p>Maps</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./notifications.html">
-                            <i class="nc-icon nc-bell-55"></i>
-                            <p>Notifications</p>
+                            <p>Data Pengeluaran</p>
                         </a>
                     </li>
                 </ul>
