@@ -1,5 +1,8 @@
 <?php
 include("../admin/config.php");
+if (!isset($_SESSION["username"])) {
+    echo '<meta http-equiv="refresh" content="0;URL=../index.php" />';
+}
 
 $id_barang = $_GET["id_barang"];
 $delBarang = "DELETE FROM barang WHERE id_barang = '$id_barang'";

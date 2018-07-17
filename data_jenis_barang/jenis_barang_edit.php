@@ -1,5 +1,8 @@
 <?php
 	include "../admin/config.php";
+    if (!isset($_SESSION["username"])) {
+     echo '<meta http-equiv="refresh" content="0;URL=../index.php" />';
+    }
 	$getIdJB = $_GET["id_jenis_barang"];
 	$editJB = "SELECT * FROM jenis_barang WHERE id_jenis_barang = '$getIdJB'";
 	$resultJB = mysqli_query($koneksi, $editJB);
@@ -69,13 +72,13 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                 <div class=" container-fluid  ">
-                    <a class="navbar-brand" href="#pablo"> Table List </a>
+                    <a class="navbar-brand" href="#"> Edit data jenis barang </a>
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
                         <ul class="nav navbar-nav mr-auto">
                         </ul>
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#pablo">
+                                <a class="nav-link" href="../logout.php">
                                     <span class="no-icon">Log out</span>
                                 </a>
                             </li>

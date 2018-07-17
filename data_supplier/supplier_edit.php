@@ -1,5 +1,8 @@
 <?php
 	include "../admin/config.php";
+    if (!isset($_SESSION["username"])) {
+     echo '<meta http-equiv="refresh" content="0;URL=../index.php" />';
+    }
 	$getIdSup = $_GET["id_supplier"];
 	$editSup = "SELECT * FROM supplier WHERE id_supplier = '$getIdSup'";
 	$resultSup = mysqli_query($koneksi, $editSup);
@@ -12,7 +15,7 @@
         <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
         <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Edit Data Barang</title>
+        <title>Edit Data Supplier</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
         <!--     Fonts and icons     -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -69,13 +72,13 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                 <div class=" container-fluid  ">
-                    <a class="navbar-brand" href="#pablo"> Table List </a>
+                    <a class="navbar-brand" href="#"> Edit data supplier </a>
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
                         <ul class="nav navbar-nav mr-auto">
                         </ul>
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#pablo">
+                                <a class="nav-link" href="../logout.php">
                                     <span class="no-icon">Log out</span>
                                 </a>
                             </li>
